@@ -1,0 +1,28 @@
+<header>
+    <h1>My Portfolio</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About Sihle</a></li>
+        <li><a href="projects">my landing page</a></li>
+        <li><a href="contact">Contacts</a></li>
+    </ul>
+
+</nav>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+    <!-- Content will go here -->
+</body>
+</html>
