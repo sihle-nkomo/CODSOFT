@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about"> About Sihle </a></li>
+            <li><a href="#projects"> Projects</a></li>
+            <li><a href="#contact"> Contact </a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a beginner software developer, working on building my skills and projects. Currently, I'm busy with web development.</p>
+        <button onclick="scrollToSection('projects')">See My Projects</button>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of the projects I've worked on:</p>
+
+
+
+        <button onclick="scrollToSection('contact')">Contact Me</button> 
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me on
+            <a href="https://x.com/snkomo_">Twitter</a>
+            <a href="https://www.linkedin.com/in/sihle-nkomo-87910929a/">LinkedIn</a>
+        </p>
+        <button onclick="scrollToTop()">Back to Top</button> 
+    </section>
+    <footer>
+        <p>&copy; 2024 @Sihle Nkomo</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
