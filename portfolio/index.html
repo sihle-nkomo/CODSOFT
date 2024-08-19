@@ -4,40 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Linking to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
 </head>
 
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>SIHLE NKOMO</h1>
     </header>
+
     <nav>
         <ul>
-            <li><a href="#about"> About Sihle </a></li>
-            <li><a href="#projects"> Projects</a></li>
-            <li><a href="#contact"> Contact </a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a beginner software developer, working on building my skills and projects. Currently, I'm busy with web development.</p>
-        <button onclick="scrollToSection('projects')">See My Projects</button>
+
+    <section id="about" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <img src="file:///home/wtc/personalprojects/codsoft/CODSOFT/portfolio/me.jpg" alt="">
+        <div>
+            <h2>About Me</h2>
+            <p>Hy I'm Sihle</p>
+            <p>I am a beginner software developer, working on building my skills and projects. Currently, I'm busy with web development.</p>
+        </div>
     </section>
-    <section id="projects">
+
+    <section id="skills" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Web Development</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Problem-Solving</li>
+        </ul>
+    </section>
+
+    <section id="projects" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
         <h2>Projects</h2>
-        <p>Here are some of the projects I've worked on:</p>
-
-
-
-        <button onclick="scrollToSection('contact')">Contact Me</button> 
+        <div class="project">
+            <img src="" alt="Project Title">
+            <h3>Landing Page</h3>
+            <p>Project Description</p>
+        </div>
     </section>
-    <section id="contact">
+
+    <section id="resume" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <h2>Resume</h2>
+        <a href="file:///home/wtc/personalprojects/codsoft/CODSOFT/portfolio/resume.pdf" download>Download My Resume (PDF)</a>
+    </section>
+
+    <section id="contact" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
         <h2>Contact</h2>
+        <p>Email: sihlenkomo90@gmail.com</p>
+        <p>Phone: (067) 009 7110</p>
         <p>Feel free to reach out to me on
-            <a href="https://x.com/snkomo_">Twitter</a>
+            <a href="https://x.com/snkomo_">Twitter</a> or
             <a href="https://www.linkedin.com/in/sihle-nkomo-87910929a/">LinkedIn</a>
         </p>
-        <button onclick="scrollToTop()">Back to Top</button> 
+        <button onclick="scrollToTop()">Back to Top</button>
     </section>
 
     <footer>
@@ -48,7 +77,10 @@
         </p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
+        AOS.init();
+        
         function scrollToSection(sectionId) {
             document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
         }
