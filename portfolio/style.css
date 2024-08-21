@@ -1,3 +1,11 @@
+body {
+    background-image: url('creative-geometric-design-space_53876-89781.avif');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes the background image stay fixed when you scroll */
+}
+
 header {
     background-color: #333333;
     padding: 20px 0;
@@ -36,15 +44,6 @@ section {
     margin: 40px 0;
     background-color: #1a1a1a;
 }
-
-body {
-    background-image: url('creative-geometric-design-space_53876-89781.avif');
-    background-size: cover; /* This ensures the image covers the entire background */
-    background-position: center; /* This centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Makes the background image stay fixed when you scroll */
-}
-
 
 #about {
     display: flex;
