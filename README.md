@@ -39,5 +39,5 @@ You can view the live demo of the projects here: [Demo Link](#)
 
 ---
 
-Feel free to explore the code and provide feedback. Contributions are welcome!
+Feel free to explore the code and provide feedback.
 
