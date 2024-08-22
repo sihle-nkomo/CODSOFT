@@ -25,12 +25,12 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     word-wrap: break-word;
-    height: 80px; /* Adjust this to set the maximum height for your display */
+    height: 80px; 
     overflow: hidden; 
 }
 
 #display-text {
-    word-break: break-all; /* Forces line breaks for long text */
+    word-break: break-all; 
 }
 
 

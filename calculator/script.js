@@ -1,22 +1,31 @@
 const display = document.getElementById('display');
+const displayText = document.getElementById('display-text');
 const buttons = document.querySelectorAll('.btn');
 let currentInput = '';
 let previousInput = '';
 let operator = '';
 
+
+function calculate(expression) {
+    try {
+        return new Function('return ' + expression)();
+    } catch {
+        return 'Error';
+    }
+}
+
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         const value = button.textContent;
-        display.textContent = value; // Temporary debugging line
 
         if (value === 'C') {
             currentInput = '';
             previousInput = '';
             operator = '';
-            display.textContent = '0';
+            displayText.textContent = '0';
         } else if (value === '⌫') {
             currentInput = currentInput.slice(0, -1);
-            display.textContent = currentInput || '0';
+            displayText.textContent = currentInput || '0';
         } else if (['+', '-', '*', '/'].includes(value)) {
             if (currentInput !== '') {
                 previousInput = currentInput;
@@ -26,13 +35,14 @@ buttons.forEach(button => {
         } else if (value === '=') {
             if (currentInput !== '' && previousInput !== '') {
                 currentInput = eval(`${previousInput} ${operator} ${currentInput}`);
-                display.textContent = currentInput;
+                displayText.textContent = currentInput;
                 previousInput = '';
                 operator = '';
             }
         } else {
             currentInput += value;
-            display.textContent = currentInput;
+            displayText.textContent = currentInput;
         }
     });
 });
+
