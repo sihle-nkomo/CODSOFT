@@ -7,6 +7,7 @@ let operator = '';
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         const value = button.textContent;
+        display.textContent = value; // Temporary debugging line
 
         if (value === 'C') {
             currentInput = '';

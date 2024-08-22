@@ -17,11 +17,22 @@ body {
 
 #display {
     background-color: #444;
-    color: rgb(14, 11, 11);
+    color: white;
     font-size: 2em;
     text-align: right;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    word-wrap: break-word;
+    height: 80px; /* Adjust this to set the maximum height for your display */
+    overflow: hidden; 
 }
+
+#display-text {
+    word-break: break-all; /* Forces line breaks for long text */
+}
+
 
 .buttons {
     display: grid;
