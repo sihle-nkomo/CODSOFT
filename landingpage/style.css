@@ -8,6 +8,17 @@ body {
     background-color: #f4f4f4;
 }
 
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 header {
     background: #333;
     color: #fff;
