@@ -3,47 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeThinkCode Landing Page</title>
+    <title>Decor Company Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Hero Section -->
     <header>
-        <h1>Welcome to WeThinkCode</h1>
         <nav>
+            <div class="logo">[Company Logo]</div>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#success">Success Stories</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
+        <section class="hero">
+            <img src="hero-image.jpg" alt="Decorated Event">
+            <h1>Transforming Moments into Memories</h1>
+            <p>Family-Owned Decor for Your Special Day</p>
+            <a href="#contact" class="cta-button">Book Your Event</a>
+        </section>
     </header>
-    <section id="hero">
-        <h2>Transform Your Future with WeThinkCode</h2>
-        <p>We offer innovative coding programs designed to equip you with the skills needed for a successful career in tech.</p>
-        <a href="#contact" class="cta-button">Get Started</a>
-    </section>
+    
+    <!-- About Us Section -->
     <section id="about">
         <h2>About Us</h2>
-        <p>WeThinkCode is dedicated to providing high-quality coding education and training. Our mission is to empower individuals with the skills needed to excel in the technology industry.</p>
+        <p>[Mother and Daughter introduction]</p>
+        <p>[Mission statement]</p>
     </section>
-    <section id="programs">
-        <h2>Our Programs</h2>
-        <p>We offer a range of programs to suit different needs and experience levels. Whether you’re a beginner or looking to advance your skills, we have something for you.</p>
-        <!-- Add more details about programs here -->
+    
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Wedding Decor</h3>
+            <p>[Description]</p>
+        </div>
+        <div class="service">
+            <h3>Birthday Events</h3>
+            <p>[Description]</p>
+        </div>
     </section>
-    <section id="success">
-        <h2>Success Stories</h2>
-        <p>Read about the experiences and achievements of our alumni who have successfully transitioned into exciting tech careers.</p>
-        <!-- Add testimonials or success stories here -->
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Our Work</h2>
+        <div class="gallery">
+            <img src="portfolio1.jpg" alt="Event 1">
+            <img src="portfolio2.jpg" alt="Event 2">
+            <!-- More images -->
+        </div>
+        <div class="testimonials">
+            <p>"Amazing decor and service!" - Client A</p>
+            <p>"The best choice for our wedding!" - Client B</p>
+        </div>
     </section>
+    
+    <!-- Contact Us Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>If you have any questions or need more information, feel free to reach out to us.</p>
-        <a href="mailto:info@wethinkcode.co.za" class="cta-button">Email Us</a>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Phone: [Phone Number]</p>
+        <p>Email: [Email Address]</p>
+        <p>[Address]</p>
     </section>
+    
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 WeThinkCode. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="social-media">
+            <a href="[Facebook URL]">Facebook</a>
+            <a href="[Instagram URL]">Instagram</a>
+        </div>
+        <p>© 2024 [Company Name]. All rights reserved.</p>
     </footer>
 </body>
 </html>
