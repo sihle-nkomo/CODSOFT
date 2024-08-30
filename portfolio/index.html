@@ -1,90 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
 
-<body>
+  <body>
     <header>
-        <p id="typewriter-text">Welcome to My Portfolio!</p>
+      <p id="typewriter-text">Welcome to My Portfolio!</p>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+      <ul>
+          <li><a href="#about" onclick="smoothScroll(event, '#about')">About</a></li>
+          <li><a href="#skills" onclick="smoothScroll(event, '#skills')">Skills</a></li>
+          <li><a href="#projects" onclick="smoothScroll(event, '#projects')">Projects</a></li>
+          <li><a href="#resume" onclick="smoothScroll(event, '#resume')">Resume</a></li>
+          <li><a href="#contact" onclick="smoothScroll(event, '#contact')">Contact</a></li>
+      </ul>
+  </nav>
 
     <section id="about" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-        <img src="me.jpg" alt="">
-        <div>
-            <h2>About Me</h2>
-            <p>Hy I'm Sihle</p>
-            <p>I am a beginner software developer, working on building my skills and projects. Currently, I'm busy with web development.</p>
-        </div>
+      <img src="me.jpg" alt=alt="A picture of Sihle" class="profile-pic" />
+      <div>
+        <h2>About Me</h2>
+        <p>Hy I'm Sihle</p>
+        <p>I am a beginner software developer, working on building my skills and projects. Currently, I'm busy with web development.</p>
+      </div>
     </section>
 
     <section id="skills" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Web Development</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>Problem-Solving</li>
-        </ul>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Web Development</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Problem-Solving</li>
+      </ul>
     </section>
 
     <section id="projects" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="" alt="Project Title">
-            <h3>Landing Page</h3>
-            <p>Project Description</p>
-        </div>
-    </section>
+      <h2>Projects</h2>
+      <div class="project">
+          <img src="" alt="Landing Page Project" />
+          <h3>Landing Page</h3>
+          <p>Project Description</p>
+          <button onclick="openModal('project1')">Learn More</button>
+      </div>
+  </section>
+  
+  <!-- Modal Structure -->
+  <div id="project1-modal" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('project1')">&times;</span>
+          <h2>Landing Page</h2>
+          <p>Detailed information about the project...</p>
+      </div>
+  </div>
 
     <section id="resume" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-        <h2>Resume</h2>
-        <a href="resume.pdf" download>Download My Resume(PDF)</a>
+      <h2>Resume</h2>
+      <a href="resume.pdf" download>Download My Resume(PDF)</a>
     </section>
 
     <section id="contact" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-        <h2>Contact</h2>
-        <p>Email: sihlenkomo90@gmail.com</p>
-        <p>Phone: (067) 009 7110</p>
-        <p>Feel free to reach out to me on 
-            <a href="https://x.com/snkomo_">X</a> or 
-            <a href="https://www.linkedin.com/in/sihle-nkomo-87910929a/">LinkedIn</a>
-        </p>
-        <button onclick="scrollToTop()">Back to Top</button>
-    </section>
-    
+      <h2>Contact</h2>
+      <p>Email: sihlenkomo90@gmail.com</p>
+      <p>Phone: (067) 009 7110</p>
+      <div class="social-links">
+          <a href="https://x.com/snkomo_" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 4.646a.5.5 0 0 0-.708 0L12 8.793l-2.646 2.647a.5.5 0 0 1-.708.708L8.5 10.293 2.646 4.646a.5.5 0 0 1 0-.708z"/><path d="M12 10c-1.657 0-3-1.303-3-3s1.343-3 3-3 3 1.303 3 3-1.343 3-3 3zm0-6c-1.656 0-3 1.303-3 3s1.343 3 3 3 3-1.303 3-3-1.343-3-3-3z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sihle-nkomo-87910929a/" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-.83 0-1.58.69-1.58 1.67v13.33H5V4h14v13.33c0 .97.75 1.67 1.58 1.67zM5 19v-9h14v9H5zm14 0H5v-9h14v9z"/></svg>
+          </a>
+      </div>
+      <button onclick="scrollToTop()">Back to Top</button>
+  </section>
+
     <footer>
-        <p>&copy; 2024 Sihle Nkomo</p>
-        <p>
-            <a href="https://x.com/snkomo_"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/sihle-nkomo-87910929a/"><i class="fab fa-linkedin"></i></a>
-        </p>
+      <p>&copy; 2024 Sihle Nkomo</p>
+      <p>
+        <a href="https://x.com/snkomo_"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/sihle-nkomo-87910929a/"><i class="fab fa-linkedin"></i></a>
+      </p>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init();
-    
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+      AOS.init()
+      
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
     </script>
-    
-</body>
+  </body>
 </html>

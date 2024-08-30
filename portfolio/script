@@ -1,0 +1,14 @@
+function smoothScroll(event, target) {
+    event.preventDefault();
+    document.querySelector(target).scrollIntoView({
+        behavior: 'smooth'
+    });
+
+    function openModal(projectId) {
+        document.getElementById(projectId + '-modal').style.display = 'block';
+    }
+    
+    function closeModal(projectId) {
+        document.getElementById(projectId + '-modal').style.display = 'none';
+    }
+}
