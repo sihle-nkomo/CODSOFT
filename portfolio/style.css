@@ -1,9 +1,9 @@
 body {
     background-image: url('creative-geometric-design-space_53876-89781.avif');
-    background-size: cover; /* This ensures the image covers the entire background */
-    background-position: center; /* This centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Makes the background image stay fixed when you scroll */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
 header {

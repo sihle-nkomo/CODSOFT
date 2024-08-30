@@ -3,91 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decor Company Landing Page</title>
+    <title>My Journey at WeThinkCode | Sihle Nkomo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Hero Section -->
     <header>
         <nav>
-            <div class="logo">[Company Logo]</div>
+            <div class="logo">Sihle Nkomo</div>
             <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#journey">My Journey</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <section class="hero">
-            <img src="hero-image.jpg" alt="Decorated Event">
-            <h1>Transforming Moments into Memories</h1>
-            <p>Family-Owned Decor for Your Special Day</p>
-            <a href="#contact" class="cta-button">Book Your Event</a>
+            <div class="hero-content">
+                <h1>My Journey at WeThinkCode</h1>
+                <p>A passion for tech and computers led me to an incredible adventure in coding and development.</p>
+                <a href="#contact" class="cta-button">Connect with Me</a>
+            </div>
         </section>
     </header>
-    
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>[Mother and Daughter introduction]</p>
-        <p>[Mission statement]</p>
-    </section>
-    
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <h3>Wedding Decor</h3>
-            <p>[Description]</p>
-        </div>
-        <div class="service">
-            <h3>Birthday Events</h3>
-            <p>[Description]</p>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="sihle-profile.jpg" alt="Sihle Nkomo" class="profile-pic">
+            <div>
+                <p>Hello! I'm Sihle Nkomo, an aspiring software engineer with a deep interest in technology and computers. My journey began in September 2023 when I joined WeThinkCode, driven by a desire to dive deeper into the world of tech and build a solid foundation in software development. Since then, it has been an incredible learning experience filled with growth, challenges, and achievements.</p>
+            </div>
         </div>
     </section>
-    
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Our Work</h2>
-        <div class="gallery">
-            <img src="portfolio1.jpg" alt="Event 1">
-            <img src="portfolio2.jpg" alt="Event 2">
-            <!-- More images -->
-        </div>
-        <div class="testimonials">
-            <p>"Amazing decor and service!" - Client A</p>
-            <p>"The best choice for our wedding!" - Client B</p>
+
+    <!-- My Journey Section -->
+    <section id="journey" class="section">
+        <h2>My Journey at WeThinkCode</h2>
+        <div class="timeline">
+            <div class="timeline-event">
+                <h3>September 2023: Joining WeThinkCode</h3>
+                <p>Motivated by my passion for technology, I took the leap to join WeThinkCode. The initial bootcamp introduced me to fundamental coding principles and set the stage for a challenging yet rewarding journey.</p>
+            </div>
+            <div class="timeline-event">
+                <h3>November 2023: First Major Project</h3>
+                <p>By November, I was working on my first major project. This experience taught me how to apply my coding skills to solve real-world problems, enhancing my understanding of algorithms and software design.</p>
+            </div>
+            <div class="timeline-event">
+                <h3>December 2024: Completing My Journey</h3>
+                <p>As my time at WeThinkCode comes to an end in December 2024, I reflect on all the skills I’ve acquired and the projects I’ve completed. This journey has solidified my foundation in tech and prepared me for the next steps in my career.</p>
+            </div>
+            <!-- Add more events as needed -->
         </div>
     </section>
-    
-    <!-- Contact Us Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-content">
+            <p>During my time at WeThinkCode, I have developed proficiency in various programming languages and tools, including:</p>
+            <ul>
+                <li>Python, JavaScript, Java</li>
+                <li>HTML, CSS, React</li>
+                <li>Git, GitHub, Version Control</li>
+                <li>SQL, MongoDB</li>
+                <li>Agile Methodologies</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <h3>MoodTrackerApp</h3>
+                <p>A mobile app built with Expo and React Native to help users track their moods and mental health. <a href="https://github.com/snkomo023/MoodTrackerApp" target="_blank">View on GitHub</a></p>
+            </div>
+            <div class="project">
+                <h3>Robot World Simulation</h3>
+                <p>A simulation project that involves programming robots to navigate a virtual world. <a href="https://github.com/snkomo023/RobotWorld" target="_blank">View on GitHub</a></p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
-            <input type="tel" name="phone" placeholder="Your Phone">
-            <textarea name="message" placeholder="Your Message"></textarea>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
-        <p>Phone: [Phone Number]</p>
-        <p>Email: [Email Address]</p>
-        <p>[Address]</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:sihlenkomo90@gmail.com">sihlenkomo90@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/sihle-nkomo" target="_blank">linkedin.com/in/sihle-nkomo</a></p>
+        </div>
     </section>
-     
+
     <!-- Footer -->
     <footer>
-        <div class="footer-links">
-            <a href="#about">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact Us</a>
-        </div>
-        <div class="social-media">
-            <a href="[Facebook URL]">Facebook</a>
-            <a href="[Instagram URL]">Instagram</a>
-        </div>
-        <p>© 2024 [Company Name]. All rights reserved.</p>
+        <p>© 2024 Sihle Nkomo. All rights reserved.</p>
     </footer>
 </body>
 </html>
