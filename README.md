@@ -57,7 +57,4 @@ The Calculator project involves creating a basic but visually appealing calculat
 ### Recent Updates (Aug 22, 2024):
 - Completed the calculator project and integrated it into both the landing page and the personal portfolio.
 
-## Demo
-You can view the live demo of the projects here: [Demo Link]
-
 Feel free to explore the code and provide feedback.
